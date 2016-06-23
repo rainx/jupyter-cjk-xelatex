@@ -1,22 +1,22 @@
 from setuptools import setup, find_packages
 setup(
-    name = "jupyter_cjk_xelatex",
-    version = "0.1",
+    name = "jupyter-cjk-xelatex",
+    version = "0.2",
     packages = find_packages(),
-    scripts = ['jupyter_cjk_xelatex.py'],
+    # scripts = ['jupyter_cjk_xelatex.py', "./console/__init__.py"],
     install_requires = ['jupyter'],
 
     # metadata for upload to PyPI
-    author = "RainX",
+    author = "rainx",
     author_email = "i@rainx.cn",
-    description = "jupyter-cjk-xelatex",
-    license = "PSF",
+    description = "Handle the encoding error for jupyter nbconvert to convert notebook to pdf document",
+    license = "MIT",
     keywords = "jupyter pdf latex xelatex",
     url = "https://github.com/rainx/jupyter-cjk-xelatex",   # project home page, if any
 
     entry_points = {
         'console_scripts': [
-            'cjk-xelatex=jupyter_cjk_xelatex.console:run',
+            'cjk-xelatex=console:run',
             ],
         }
 )
