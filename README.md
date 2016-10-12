@@ -11,7 +11,7 @@ Make two changes before gen pdf file:
 
 Installation:
 
-    pip install jupyter_cjx_xelatex
+    pip install jupyter-cjx-xelatex
 
 or 
 
